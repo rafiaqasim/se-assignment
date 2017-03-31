@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.shinstitute.uploadelecture"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:paddingRight="20dp"
+        android:textStyle="bold|italic"
+        android:text="FILE NAME: "
+        android:id="@+id/textView5"
+        android:layout_marginTop="44dp"
+        android:textSize="25sp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:paddingRight="20dp"
+        android:text="CHAPTER NO: "
+        android:id="@+id/textView6"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:paddingRight="20dp"
+        android:textStyle="bold|italic"
+        android:text="SUBJECT:"
+        android:id="@+id/textView7"
+        android:layout_marginTop="60dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="visible"
+        android:indeterminate="true"
+        android:indeterminateTint="#000000"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editText4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:id="@+id/button4"
+        android:background="@drawable/oval"
+        android:layout_above="@+id/progressBar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD"
+        android:id="@+id/button5"
+        android:textSize="20sp"
+        android:background="@drawable/oval"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/file_name_space"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignStart="@+id/button4"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_alignEnd="@+id/progressBar" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chap_no_"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignStart="@+id/button4"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_alignEnd="@+id/editText4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:paddingRight="20dp"
+        android:textStyle="bold|italic"
+        android:text="TOPIC:"
+        android:id="@+id/textView3"
+        android:textSize="25sp"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_above="@+id/button5"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_toEndOf="@+id/textView3" />
+
+</RelativeLayout>
