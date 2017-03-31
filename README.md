@@ -1,2 +1,4 @@
 # se-assignment
-exploring different new features of GitHub
+
+
+Getting familiarized with the code repository tool
